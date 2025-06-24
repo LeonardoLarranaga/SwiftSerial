@@ -276,7 +276,7 @@ public actor SerialPort {
     #if os(OSX)
     /**
      List all available serial ports.
-     - Returns: A list of available serial ports.
+     - Returns: A String array containing the paths to all available serial ports.
      */
     public static func listAvailablePorts() throws -> [String] {
         let task = Process()
